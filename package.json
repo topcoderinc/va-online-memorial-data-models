@@ -1,5 +1,5 @@
 {
-  "name": "@va/models",
+  "name": "va-online-memorial-data-models",
   "version": "0.0.1",
   "description": "",
   "main": "index.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/topcoderinc/va-data-scraper.git"
+    "url": "https://github.com/topcoderinc/va-online-memorial-data-scraper.git"
   },
   "author": "",
   "license": "ISC",
