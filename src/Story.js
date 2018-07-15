@@ -11,6 +11,8 @@ const { Statuses } = require('../constants');
  */
 module.exports = (sequelize, DataTypes) => sequelize.define('Story', {
   id: { type: DataTypes.BIGINT, primaryKey: true, autoIncrement: true },
+  saluteCount: { type: DataTypes.BIGINT, allowNull: false, defaultValue: 0 },
+  shareCount: { type: DataTypes.BIGINT, allowNull: false, defaultValue: 0 },
   status: {
     type: DataTypes.ENUM,
     allowNull: false,
