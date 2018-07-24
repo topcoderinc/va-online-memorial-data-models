@@ -20,6 +20,14 @@ module.exports = {
           { type: Sequelize.BIGINT, allowNull: false, defaultValue: 0 },
           { transaction: t }
         ));
+
+        migrations.push(queryInterface.addColumn(
+          table,
+          'viewCount',
+          { type: Sequelize.BIGINT, allowNull: false, defaultValue: 0 },
+          { transaction: t }
+        ));
+
       });
 
       return Promise.all(migrations);
@@ -34,6 +42,7 @@ module.exports = {
       postTables.forEach(function(table) {
         migrations.push(queryInterface.removeColumn(table, 'saluteCount'), { transaction: t });
         migrations.push(queryInterface.removeColumn(table, 'shareCount'), { transaction: t });
+        migrations.push(queryInterface.removeColumn(table, 'viewCount'), { transaction: t });
       });
 
       return Promise.all(migrations);

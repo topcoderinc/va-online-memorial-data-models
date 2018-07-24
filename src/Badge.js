@@ -19,6 +19,7 @@ module.exports = (sequelize, DataTypes) => sequelize.define('Badge', {
     defaultValue: Statuses.Requested,
     values: _.values(Statuses),
   },
+  viewCount: { type: DataTypes.BIGINT, allowNull: false, defaultValue: 0 },
   createdBy: { type: DataTypes.BIGINT, allowNull: false },
   updatedBy: DataTypes.BIGINT,
 }, {});

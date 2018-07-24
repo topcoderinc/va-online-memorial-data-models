@@ -20,6 +20,7 @@ module.exports = (sequelize, DataTypes) => sequelize.define('Photo', {
     values: _.values(Statuses),
   },
   title: { type: DataTypes.STRING, allowNull: false },
+  viewCount: { type: DataTypes.BIGINT, allowNull: false, defaultValue: 0 },
   createdBy: { type: DataTypes.BIGINT, allowNull: false },
   updatedBy: DataTypes.BIGINT,
 }, {});
