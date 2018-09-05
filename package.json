@@ -18,6 +18,7 @@
     "moment": "^2.20.1",
     "pg": "^7.4.1",
     "sequelize": "^4.29.0",
-    "sequelize-cli": "^4.0.0"
+    "sequelize-cli": "^4.0.0",
+    "underscore": "^1.9.1"
   }
 }
