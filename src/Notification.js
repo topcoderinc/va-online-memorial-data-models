@@ -1,6 +1,8 @@
 'use strict';
 
 const {NotificationStatus, NotificationType} = require('../constants');
+const _ = require('lodash');
+
 /*
  * Copyright (c) 2018 Topcoder, Inc. All rights reserved.
  */
