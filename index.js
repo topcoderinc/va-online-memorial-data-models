@@ -41,6 +41,7 @@ const War = require('./src/War')(sequelize, Sequelize);
 const NotificationPreference = require('./src/NotificationPreference')(sequelize, Sequelize);
 const Kin = require('./src/Kin')(sequelize, Sequelize);
 const Burial = require('./src/Burial')(sequelize, Sequelize);
+const Notification = require('./src/Notification')(sequelize, Sequelize);
 
 // Create associations
 const belongsToMany = (source, target, through, as) => {
@@ -98,6 +99,7 @@ module.exports = {
   NotificationPreference,
   Kin,
   Burial,
+  Notification,
   sequelize,
   Sequelize,
   syncDB: force => sequelize.sync({ force }),
