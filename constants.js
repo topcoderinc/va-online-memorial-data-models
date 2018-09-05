@@ -37,10 +37,22 @@ const PostTypes = {
   Testimonial: 'Testimonial'
 };
 
+const NotificationStatus = {
+  Read: 'Read',
+  New: 'New'
+};
+
+const NotificationType = {
+  Post: 'Post',
+  Nok: 'Nok'
+};
+
 module.exports = {
   UserRoles,
   UserStatuses,
   Statuses,
+  NotificationStatus,
+  NotificationType,
   FlagStatuses,
   PostTypes
 };
