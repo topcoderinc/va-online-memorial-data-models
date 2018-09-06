@@ -14,7 +14,7 @@ const constants = require('./constants');
 // initialize database connection
 const sequelize = new Sequelize(config.dbConfig.db_url, {
   logging: null,
-  //operatorsAliases: false,
+  operatorsAliases: false,
   // native: 'true',
   dialect: 'postgres'
 });
